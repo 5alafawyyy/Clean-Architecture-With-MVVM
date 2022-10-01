@@ -1,12 +1,12 @@
-import 'package:clean_architecture_with_mvvm/presentation/theme_manager.dart';
+import 'package:clean_architecture_with_mvvm/presentation/resources/theme_manager.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp._internal();  // Named Constructor
 
-  static const MyApp _instance = MyApp._internal();
+  static const MyApp _instance = MyApp._internal(); // Singleton
 
-  factory MyApp() => _instance;
+  factory MyApp() => _instance; // Factory
 
   @override
   State<MyApp> createState() => _MyAppState();
