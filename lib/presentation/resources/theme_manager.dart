@@ -14,7 +14,7 @@ ThemeData getApplicationTheme() {
     splashColor: ColorManager.lightPrimary, // ripple effect color
 
     // card theme
-    cardTheme: CardTheme(
+    cardTheme: const CardTheme(
       color: ColorManager.white,
       shadowColor: ColorManager.grey,
       elevation: AppSize.s4,
@@ -33,8 +33,8 @@ ThemeData getApplicationTheme() {
     ),
 
     // button theme
-    buttonTheme: ButtonThemeData(
-      shape: const StadiumBorder(),
+    buttonTheme: const ButtonThemeData(
+      shape: StadiumBorder(),
       disabledColor: ColorManager.grey1,
       buttonColor: ColorManager.primary,
       splashColor: ColorManager.lightPrimary,
@@ -58,22 +58,26 @@ ThemeData getApplicationTheme() {
 
     // text theme
     textTheme: TextTheme(
-      displayLarge: getLightStyle(
-        color: ColorManager.white,
-        fontSize: FontSize.s22,
-      ),
-      headline1: getSemiBoldStyle(
+      displayLarge: getSemiBoldStyle(
         color: ColorManager.darkGrey,
         fontSize: FontSize.s16,
       ),
-      subtitle1: getMediumStyle(
-        color: ColorManager.lightGrey,
+      headlineLarge: getSemiBoldStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s16,
+      ),
+      headlineMedium: getRegularStyle(
+        color: ColorManager.darkGrey,
         fontSize: FontSize.s14,
       ),
-      caption: getRegularStyle(
+      titleMedium: getMediumStyle(
+        color: ColorManager.primary,
+        fontSize: FontSize.s16,
+      ),
+      bodyLarge: getRegularStyle(
         color: ColorManager.grey1,
       ),
-      bodyText1: getRegularStyle(
+      bodySmall: getRegularStyle(
         color: ColorManager.grey,
       ),
     ),
@@ -98,12 +102,12 @@ ThemeData getApplicationTheme() {
       ),
 
       // enabled border style
-      enabledBorder: OutlineInputBorder(
+      enabledBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.primary,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(
             AppSize.s8,
           ),
@@ -111,12 +115,12 @@ ThemeData getApplicationTheme() {
       ),
 
       // focused border style
-      focusedBorder: OutlineInputBorder(
+      focusedBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.grey,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(
             AppSize.s8,
           ),
@@ -124,24 +128,24 @@ ThemeData getApplicationTheme() {
       ),
 
       // error border style
-      errorBorder: OutlineInputBorder(
+      errorBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.error,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(
             AppSize.s8,
           ),
         ),
       ),
       // focused border style
-      focusedErrorBorder: OutlineInputBorder(
+      focusedErrorBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.primary,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(
             AppSize.s8,
           ),
