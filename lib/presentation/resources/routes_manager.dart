@@ -1,11 +1,11 @@
 import 'package:clean_architecture_with_mvvm/presentation/resources/strings_manager.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/auth/forgot_password/forgot_password_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/auth/login/login_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/auth/register/register_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/main/main_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/onboarding/onboarding_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/splash/splash_view.dart';
-import 'package:clean_architecture_with_mvvm/presentation/views/store_details/store_details_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/auth/forgot_password/forgot_password_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/auth/login/login_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/auth/register/register_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/main/main_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/onboarding/view/onboarding_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/splash/splash_view.dart';
+import 'package:clean_architecture_with_mvvm/presentation/store_details/store_details_view.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
