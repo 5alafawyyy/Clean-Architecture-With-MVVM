@@ -39,7 +39,7 @@ class Customer {
 class Contacts {
   String phone;
   String email;
-  int link;
+  String link;
 
   Contacts(
     this.phone,
@@ -49,8 +49,8 @@ class Contacts {
 }
 
 class Authentication {
-  Customer customer;
-  Contacts contacts;
+  Customer? customer;
+  Contacts? contacts;
 
   Authentication(
     this.customer,
