@@ -1,6 +1,6 @@
 import 'package:clean_architecture_with_mvvm/app/constants.dart';
 import 'package:clean_architecture_with_mvvm/data/response/responses.dart';
-import 'package:clean_architecture_with_mvvm/domain/models.dart';
+import 'package:clean_architecture_with_mvvm/domain/models/models.dart';
 import 'package:clean_architecture_with_mvvm/app/extensions.dart';
 
 extension CustomerResponseMapper on CustomerResponse? {

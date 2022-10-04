@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:clean_architecture_with_mvvm/domain/models.dart';
+import 'package:clean_architecture_with_mvvm/domain/models/models.dart';
 import 'package:clean_architecture_with_mvvm/presentation/base/base_view_model.dart';
 import 'package:clean_architecture_with_mvvm/presentation/resources/assets_manager.dart';
 import 'package:clean_architecture_with_mvvm/presentation/resources/strings_manager.dart';
